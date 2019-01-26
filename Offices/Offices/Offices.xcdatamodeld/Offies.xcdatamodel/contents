@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Office" representedClassName="Office" syncable="YES" codeGenerationType="class">
+        <attribute name="addressOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bankBezOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bicOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bIdOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bLZOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dvrOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faxNumberOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="giroOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ibanOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageURLOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kzOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitudeOfOffice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitudeOfOffice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openingTimeOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="teleNetworkOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telephoneNumberOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="typeOfOffice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipCodeOfOffice" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Office" positionX="-45" positionY="0" width="128" height="360"/>
+    </elements>
+</model>

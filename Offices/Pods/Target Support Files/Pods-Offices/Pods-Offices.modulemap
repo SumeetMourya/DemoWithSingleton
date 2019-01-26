@@ -1,0 +1,6 @@
+framework module Pods_Offices {
+  umbrella header "Pods-Offices-umbrella.h"
+
+  export *
+  module * { export * }
+}

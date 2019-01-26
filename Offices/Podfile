@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+
+def myPods
+
+#  pod 'PullToRefreshKit', '~> 0.8.8'
+  pod 'ESPullToRefresh'
+  pod 'ReachabilitySwift', '~> 4.3.0'
+  pod 'PKHUD'  # 5.0.0
+
+end
+
+target 'Offices' do
+  
+  myPods
+
+end
+

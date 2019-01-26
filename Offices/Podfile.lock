@@ -1,0 +1,24 @@
+PODS:
+  - ESPullToRefresh (2.7)
+  - PKHUD (5.2.1)
+  - ReachabilitySwift (4.3.0)
+
+DEPENDENCIES:
+  - ESPullToRefresh
+  - PKHUD
+  - ReachabilitySwift (~> 4.3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ESPullToRefresh
+    - PKHUD
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+
+PODFILE CHECKSUM: aea5d1594da37ca3ad8e87aed57d637e3c428b2d
+
+COCOAPODS: 1.6.0.beta.2
