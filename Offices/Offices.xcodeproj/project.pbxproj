@@ -21,10 +21,10 @@
 		E120415421FCA29B00A9D2FF /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E120415121FCA29B00A9D2FF /* LoaderView.swift */; };
 		E120415521FCA29B00A9D2FF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E120415221FCA29B00A9D2FF /* StringExtension.swift */; };
 		E120415821FCA2B100A9D2FF /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E120415721FCA2B100A9D2FF /* APIService.swift */; };
-		E120415A21FCA2C300A9D2FF /* ListOfOfficesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E120415921FCA2C300A9D2FF /* ListOfOfficesItem.swift */; };
 		E120415E21FCAF0A00A9D2FF /* SingletonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E120415D21FCAF0A00A9D2FF /* SingletonManager.swift */; };
 		E120416021FCB2CE00A9D2FF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E120415F21FCB2CE00A9D2FF /* CoreDataManager.swift */; };
 		E120416321FCC14C00A9D2FF /* Offices.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E120416121FCC14C00A9D2FF /* Offices.xcdatamodeld */; };
+		E199930921FDC28000D02589 /* OfficeItemDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E199930821FDC28000D02589 /* OfficeItemDM.swift */; };
 		E586477CE4234F934E960B21 /* Pods_Offices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1E85DA2889C3344F7C0AA1 /* Pods_Offices.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,10 +48,10 @@
 		E120415121FCA29B00A9D2FF /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		E120415221FCA29B00A9D2FF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E120415721FCA2B100A9D2FF /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		E120415921FCA2C300A9D2FF /* ListOfOfficesItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListOfOfficesItem.swift; sourceTree = "<group>"; };
 		E120415D21FCAF0A00A9D2FF /* SingletonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonManager.swift; sourceTree = "<group>"; };
 		E120415F21FCB2CE00A9D2FF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		E120416221FCC14C00A9D2FF /* Offies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Offies.xcdatamodel; sourceTree = "<group>"; };
+		E199930821FDC28000D02589 /* OfficeItemDM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeItemDM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		E120413421FCA10600A9D2FF /* Offices */ = {
 			isa = PBXGroup;
 			children = (
-				E120415921FCA2C300A9D2FF /* ListOfOfficesItem.swift */,
+				E199930821FDC28000D02589 /* OfficeItemDM.swift */,
 				E120414B21FCA1E100A9D2FF /* OfficeDetailView.swift */,
 				E120414D21FCA1EE00A9D2FF /* OfficeOnMapView.swift */,
 				E120414721FCA1D400A9D2FF /* ListOfOfficesView.swift */,
@@ -177,6 +177,11 @@
 				TargetAttributes = {
 					E120413121FCA10600A9D2FF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -276,10 +281,10 @@
 				E120415521FCA29B00A9D2FF /* StringExtension.swift in Sources */,
 				E120416021FCB2CE00A9D2FF /* CoreDataManager.swift in Sources */,
 				E120415821FCA2B100A9D2FF /* APIService.swift in Sources */,
+				E199930921FDC28000D02589 /* OfficeItemDM.swift in Sources */,
 				E105FF6821FD064D00FCA58D /* ColorExtension.swift in Sources */,
 				E120415421FCA29B00A9D2FF /* LoaderView.swift in Sources */,
 				E120413621FCA10600A9D2FF /* AppDelegate.swift in Sources */,
-				E120415A21FCA2C300A9D2FF /* ListOfOfficesItem.swift in Sources */,
 				E120414A21FCA1D400A9D2FF /* OfficeCell.swift in Sources */,
 				E105FF6621FD060E00FCA58D /* Theme.swift in Sources */,
 			);
@@ -431,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T755W67T46;
 				INFOPLIST_FILE = Offices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T755W67T46;
 				INFOPLIST_FILE = Offices/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

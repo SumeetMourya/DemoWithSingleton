@@ -13,8 +13,8 @@ import ESPullToRefresh
 
 class ListOfOfficesViewController: UIViewController {
     
-    var listOfOffice: [ListOfOfficesItem] = [ListOfOfficesItem]()
-    var selectedOfficeData: ListOfOfficesItem? = nil
+    var listOfOffice: [OfficeItemDM] = [OfficeItemDM]()
+    var selectedOfficeData: OfficeItemDM? = nil
     
     @IBOutlet var tblvOfficeList: UITableView!
     @IBOutlet var statusText: UILabel!
@@ -49,7 +49,7 @@ class ListOfOfficesViewController: UIViewController {
     }
     
     // MARK: ListOfOfficesViewProtocol methods
-    func updateListOfOffices(data: [ListOfOfficesItem]) {
+    func updateListOfOffices(data: [OfficeItemDM]) {
         
         DispatchQueue.main.async() {
             

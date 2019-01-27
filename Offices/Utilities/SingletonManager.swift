@@ -16,7 +16,7 @@ class SingletonManager: NSObject {
 
     }
     
-    func getOfficeList() -> [ListOfOfficesItem] {
+    func getOfficeList() -> [OfficeItemDM] {
         return CoreDataManager.sharedDatabaseManager.getOfficeDataFromLocal()
     }
     
@@ -53,7 +53,7 @@ class APIManager {
         apisServiceStart = APIService()
     }
     
-    func loadDataForURL(url: String, onSuccess success: @escaping (_ data: [ListOfOfficesItem], _ apiStatusCode: ApiStatusType) -> Void, onFailure failure: @escaping (_ error: Error?, _ apiStatusCode: ApiStatusType) -> Void) {
+    func loadDataForURL(url: String, onSuccess success: @escaping (_ data: [OfficeItemDM], _ apiStatusCode: ApiStatusType) -> Void, onFailure failure: @escaping (_ error: Error?, _ apiStatusCode: ApiStatusType) -> Void) {
         
         apisServiceStart?.loadDataWith(urlString: url, onSuccess: { (parseData, succeedCode) in
             
@@ -66,7 +66,7 @@ class APIManager {
             }
             
             do {
-                let offices = try JSONDecoder().decode([ListOfOfficesItem].self, from: modifiedDataInUTF8Format)
+                let offices = try JSONDecoder().decode([OfficeItemDM].self, from: modifiedDataInUTF8Format)
                 let sortedOfficesData = offices.sorted(by: {
                     $0.zipCodeOfOffice! < $1.zipCodeOfOffice!
                 })

@@ -12,7 +12,7 @@ import Foundation
 import CoreData
 
 
-struct ListOfOfficesItem: Decodable {
+struct OfficeItemDM: Decodable {
     
     let idOfOffice: String?
     let typeOfOffice: String?

@@ -12,7 +12,7 @@ import MapKit
 
 class OfficeOnMapViewController: UIViewController {
     
-    var dataOfScreen: ListOfOfficesItem?
+    var dataOfScreen: OfficeItemDM?
 
     @IBOutlet var mapView: MKMapView!
     

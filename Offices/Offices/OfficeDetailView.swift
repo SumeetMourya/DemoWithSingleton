@@ -11,7 +11,7 @@ import UIKit
 
 class OfficeDetailViewController: UIViewController {
     
-    var dataOfScreen: ListOfOfficesItem?
+    var dataOfScreen: OfficeItemDM?
     
     @IBOutlet var nameOfOffice: UILabel!
     @IBOutlet var officeImage: UIImageView!
